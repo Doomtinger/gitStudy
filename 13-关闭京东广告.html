@@ -100,9 +100,20 @@
         <a href="#">
             <img src="images/top-banner.jpg" alt=""/>
         </a>
-        <span></span>
+        <span id="closeBtn"></span>
     </div>
 </div>
+
+<script>
+    var closeBtn = document.getElementById("closeBtn");
+    closeBtn.onclick = function () {
+        //隐藏banner
+        this.parentNode.parentNode.style.display = "none";
+
+    };
+</script>
+
+
 <!--logo区域开始-->
 <div class="main-logo w clearfix">
 
